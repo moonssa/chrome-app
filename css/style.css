@@ -131,3 +131,9 @@ button {
 ul {
   color: white;
 }
+
+#logo {
+  position: relative;
+  top: 500px;
+  left: 900px;
+}
