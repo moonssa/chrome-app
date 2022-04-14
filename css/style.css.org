@@ -56,7 +56,7 @@ button {
   outline: none;
 }
 
-#login-form,
+#login-form input,
 h1 {
   top: 60%;
   left: 45%;
@@ -100,13 +100,11 @@ h2 {
   color: var(--color-dark-grey);
 }
 
-#login-form,
 #todo-form {
   top: 55%;
   left: 40%;
 }
 
-#login-form input,
 #todo-form input {
   background-color: transparent;
   font-size: var(--font-small);
@@ -117,8 +115,8 @@ h2 {
 }
 
 input::placeholder {
-  color: var(--color-light-grey);
-  opacity: 0.9;
+  color: var(--color-white);
+  opacity: 0.5;
   font-size: var(--font-small);
 }
 

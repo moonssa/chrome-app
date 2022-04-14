@@ -12,7 +12,7 @@ const onGeoOk = (pos) => {
     .then((response) => response.json())
     .then((data) => {
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} : ${data.main.temp}`;
+      weather.innerText = `/ ${data.weather[0].main} : ${data.main.temp} ℃`;
       //   console.log(data.weather[0].main);
       //   console.log(data.main.temp, data.main.temp_min, data.main.temp_max);
       //   console.log(data.name);

@@ -1,5 +1,4 @@
-const TODOS_KEY = "todos";
-
+// const TODOS_KEY = "todos";
 const toDoForm = document.querySelector("#todo-form");
 const toDoList = document.querySelector("ul");
 
@@ -35,6 +34,9 @@ const onTodoSubmit = (event) => {
   event.preventDefault();
   const input = toDoForm.querySelector("input");
   const newTodo = input.value;
+  if (newTodo === "") {
+    return;
+  }
   input.value = "";
 
   const newTodoObj = {

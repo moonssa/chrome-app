@@ -7,5 +7,11 @@ console.log(idx);
 const chosenImage = background[idx];
 
 const bgImg = document.createElement("img");
+
 bgImg.src = `./img/${chosenImage}`;
+bgImg.backgroundSize = "cover";
+bgImg.backgroundPosition = "center";
+bgImg.backgroundRepeat = "no-repeat";
+bgImg.width = "1400";
+bgImg.height = "820";
 document.body.appendChild(bgImg);
